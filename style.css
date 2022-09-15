@@ -1,1 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+header,
+footer {
+    width: auto;
+    height: 10vh;
+    border: 1px solid black;
+    background: black;
+    color: white;
+    padding: 0px 10px;
+}
+
+button:hover {
+    padding: 10px;
+    background-color: aqua;
+    transition-delay: 0s;
+}
+
+main {
+    width: auto;
+    height: 80vh;
+}
+
+aside {
+    border: 1px solid black;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+header .logout {
+    justify-self: end;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 10vh 1fr 10vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+}
+
+.content-container{
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+}
+
+.p {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gallery {
+    padding: 10px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+figure {
+    background-color: yellow;
+}
+
+#figura8{
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 3/6;
+    justify-items: center;
+    align-items: center;
+}
